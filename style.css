@@ -1,0 +1,864 @@
+  /* ---------- GLOBAL ---------- */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+
+  body {
+      background-color: white;
+      overflow-x: hidden;
+      color: black;
+  }
+
+  /* ---------- TOP BANNER ---------- */
+  .top_banner {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 8px 0;
+      font-size: 13px;
+  }
+
+  /* ---------- NAVBAR ---------- */
+  #navbar {
+      width: 100%;
+      background-color: white;
+      position: relative;
+      z-index: 100;
+  }
+
+  .nav_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      position: relative;
+  }
+
+  .nav_left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+  }
+
+  .nav_left i {
+      font-size: 22px;
+      cursor: pointer;
+  }
+
+  .nav_logo img {
+      width: 80px;
+  }
+
+  .nav_menu {
+      display: none;
+  }
+
+  .nav_right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .nav_links {
+      display: none;
+      list-style: none;
+      gap: 20px;
+  }
+
+  .nav_links a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+  }
+
+  .nav_links a:hover {
+      text-decoration: underline;
+  }
+
+
+  .cart_icon {
+      width: 30px;
+      height: 30px;
+      background-color: black;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+  }
+
+  /* ---------- HERO SECTION ---------- */
+  .hero {
+      position: relative;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+  }
+
+  .hero_img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .hero_text {
+      position: absolute;
+      bottom: 15%;
+      left: 8%;
+      color: white;
+      text-align: left;
+  }
+
+  .hero_text h4 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: 600;
+  }
+
+  .hero_text h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+  }
+
+  .hero_text p {
+      font-size: 14px;
+      margin-bottom: 20px;
+  }
+
+  .shop_btn {
+      display: inline-block;
+      padding: 10px 16px;
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      font-weight: 600;
+  }
+
+  .shop_btn:hover {
+      opacity: 0.8;
+  }
+
+  /* --------------------- Main Section two------------------------------- */
+
+  .collection {
+      padding: 60px 20px;
+      font-family: 'Helvetica Neue', sans-serif;
+
+  }
+
+  .collection h2 {
+
+      font-size: 17px;
+      margin-bottom: 40px;
+      color: #111;
+      font-weight: normal;
+  }
+
+  #shop_all {
+      display: none;
+  }
+
+
+  .product_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+      gap: 1px;
+      justify-items: center;
+
+  }
+
+  .product_grid a:hover img {
+      transform: scale(1.1);
+  }
+
+  .product img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 5px;
+      background-color: #f5f5f5;
+  }
+
+  .product h3 {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #000;
+      font-weight: 600;
+      font-weight: normal;
+  }
+
+  /* ------------------------------------section 3 ------------------------- */
+
+  #section3 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: 800px;
+      width: 100%;
+
+  }
+
+  #model_img_1 {
+      height: 30%;
+      width: 100%;
+  }
+
+  #model_img_2 {
+      padding-top: 2px;
+      height: 59%;
+      width: 100%;
+
+  }
+
+  /* ----------------------------shop_menswear------------------- */
+
+  #shop_menswear {
+      height: 250px;
+      background-color: #fff;
+      padding: 50px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+  }
+
+  #dutch_design {
+      width: 60%;
+      text-align: left;
+      position: absolute;
+      top: 20%;
+  }
+
+  #square_icon {
+      margin-bottom: 50px;
+  }
+
+  #dutch_design i {
+      margin-bottom: 20px;
+  }
+
+  #square_icon i {
+      margin: 20px;
+      color: #000;
+      font-size: 14px;
+  }
+
+  #shop_menswear_info p {
+      font-size: 12px;
+      line-height: 1.8;
+      color: #111;
+      margin-bottom: 20px;
+      max-width: 600px;
+  }
+
+  #shop_Menswear_button {
+      display: inline-block;
+      padding: 15px 30px;
+      border: 1px solid #d6d2d2;
+      color: #111;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      font-size: 13px;
+  }
+
+  #shop_Menswear_button:hover {
+      background-color: #000;
+      color: #fff;
+      border-color: #000;
+      text-decoration: underline;
+  }
+
+  /* ----------------section 4--------------------------- */
+
+  #section4 {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      height: 600px;
+      width: 100%;
+  }
+
+  #model_img_3 {
+      position: absolute;
+      top: 10%;
+      width: 100%;
+      height: 90%;
+  }
+
+  #model_img_4 {
+      display: none;
+  }
+
+  /* -------------------------shop footwear ----------------------------------- */
+
+  #shop_footwear {
+      height: 300px;
+      background-color: #fff;
+      padding: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+  }
+
+  #shop_sneakar {
+      width: 60%;
+      text-align: left;
+      position: absolute;
+      top: 10%;
+  }
+
+  #shop_sneakar i {
+      margin-bottom: 20px;
+  }
+
+  #square_icon1 {
+      margin-bottom: 50px;
+  }
+
+  #square_icon1 i {
+      margin: 20px;
+      color: #000;
+      font-size: 14px;
+  }
+
+  #shop_footwear_info p {
+      font-size: 12px;
+      line-height: 1.8;
+      color: #111;
+      margin-bottom: 20px;
+      max-width: 600px;
+  }
+
+  #shop_footwear_button {
+      display: inline-block;
+      padding: 15px 30px;
+      border: 1px solid #d6d2d2;
+      color: #111;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      font-size: 13px;
+  }
+
+  #shop_footwear_button:hover {
+      background-color: #000;
+      color: #fff;
+      border-color: #000;
+      text-decoration: underline;
+  }
+
+  /* ------------------------ section : classic ------------------------- */
+
+  .product_section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+  }
+
+  .product_card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .product_card img {
+      width: 100%;
+      height: 550px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+  }
+
+  .product_card:hover img {
+      transform: scale(1.05);
+  }
+
+  .product_info {
+      position: absolute;
+      bottom: 25px;
+      left: 25px;
+      color: #fff;
+  }
+
+  .product_info h3 {
+      font-size: 1.2rem;
+      margin: 0;
+      font-weight: 500;
+  }
+
+  .product_info p {
+      font-size: 0.95rem;
+      margin: 6px 0 10px;
+      opacity: 0.9;
+  }
+
+  .read_link {
+      font-size: 0.9rem;
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 2px;
+      transition: opacity 0.3s ease;
+  }
+
+  .read_link:hover {
+      opacity: 0.7;
+  }
+
+  #favorites {
+      margin: 5px;
+  }
+
+
+  #favorites {
+      padding: 10px 13px;
+  }
+
+  #favorites h4 {
+
+      padding: 10px 0px 30px 0px;
+
+
+  }
+
+  .product_card_1 {
+      width: 90%;
+      max-width: 300px;
+      margin: 5px auto;
+      padding: 10px;
+      text-align: left;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+  }
+
+
+  .offer_text {
+      color: #a52424;
+      font-size: 0.9rem;
+      margin-top: 5px;
+      font-weight: 600;
+  }
+
+  .product_name {
+      font-size: 15px;
+      font-weight: 600;
+      margin: 4px 0;
+  }
+
+  .product_material {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+  }
+
+  .price {
+      font-size: 1rem;
+  }
+
+  .old_price {
+      text-decoration: line-through;
+      color: #999;
+      margin-right: 6px;
+  }
+
+  #offer_text1 {
+      font-size: 15px;
+      color: green;
+  }
+
+  .offer_text2 {
+      color: #000;
+  }
+
+  /* ------------------------------footer------------------------------------------------ */
+
+  /* ---------------------------return and exchange------------------- */
+
+  .container-fluid {
+      height: 300px;
+      position: relative;
+  }
+
+  .container {
+      position: absolute;
+      top: 30%;
+      left: 2%
+  }
+
+  .last_footer {
+      background-color: #fff;
+      padding: 30px;
+      border-top: 1px solid #ddd;
+  }
+
+  .last_footer h6 {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+  }
+
+  .last_footer p,
+  .last_footer a {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+  }
+
+  .last_footer a {
+      text-decoration: none;
+  }
+
+  .footer-section {
+      margin-bottom: 20px;
+    position: relative;
+  }
+
+  .social-icons a {
+      margin: 5px;
+      font-size: 18px;
+      color: #333;
+  }
+
+  .payment-icons img {
+      width: 40px;
+      margin: 0 5px;
+  }
+
+  .selectors {
+      margin-top: 20px;
+      padding: 20px;
+  }
+
+  .last_footer .row {
+      display: block;
+      text-align: center;
+  }
+
+  .last_footer .col-12 {
+      margin-bottom: 20px;
+  }
+
+  .social-icons {
+      margin-top: 10px;
+  }
+
+  .footer-terms {
+      margin-top: 20px;
+  }
+
+  .payment-icons img {
+      width: 30px;
+  }
+
+  #country,
+  #language {
+      padding: 5px;
+  }
+/* --------- MEDIA QUERY: Tablet VIEW --------- */
+  @media only screen and (min-width:768px) {
+    #section3 {  
+      height: 100%;
+  } 
+
+  #model_img_2 {
+      height: 650px; 
+
+  }
+
+
+  }
+
+  /* --------- MEDIA QUERY: LAPTOP VIEW --------- */
+  @media only screen and (min-width:1200px) {
+      .nav_container {
+          justify-content: center;
+          padding: 20px 80px;
+      }
+
+      .nav_left {
+          display: none;
+      }
+
+      .nav_logo {
+          position: absolute;
+          left: 50px;
+      }
+
+      .nav_menu {
+          display: block;
+      }
+
+      .nav_menu ul {
+          display: flex;
+          flex-wrap: wrap;
+          position: absolute;
+          left: 170px;
+          top: 10px;
+          gap: 40px;
+          list-style: none;
+      }
+
+      .nav_menu a {
+          text-decoration: none;
+          color: black;
+          font-weight: 500;
+      }
+
+      .nav_menu a:hover {
+          text-decoration: underline;
+      }
+
+      .nav_right {
+          position: absolute;
+          right: 50px;
+      }
+
+      .nav_links {
+          display: flex;
+
+      }
+
+      .cart_icon {
+          margin-left: 15px;
+      }
+
+      .hero {
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: flex-end;
+          background: url('./img/Homepage_Dekstop_1200x.webp') no-repeat left center;
+          background-size: 75% 100%;
+          position: relative;
+          top: 0;
+          overflow: hidden;
+
+      }
+
+      .hero_img {
+          display: none;
+      }
+
+
+      .hero_text {
+          position: absolute;
+          left: 75%;
+          top: 50%;
+          color: black;
+          width: 25%;
+          text-align: center;
+      }
+
+      .hero_text h1 {
+          font-size: 36px;
+      }
+
+      .shop_btn {
+          background: none;
+          color: black;
+          border-bottom: 1px solid black;
+          padding: 0;
+      }
+
+
+
+      .collection h2 {
+          font-size: 22px;
+      }
+
+      #info {
+          position: relative;
+      }
+
+
+      #shop_all {
+          position: absolute;
+          top: 0;
+          right: 10px;
+          display: block;
+          background: none;
+          border: none;
+
+
+      }
+
+      #info a {
+          text-decoration: none;
+      }
+
+      #info a:hover {
+          text-decoration: underline;
+      }
+
+      #info a {
+          color: #111;
+      }
+
+      #model_img {
+          width: 100%;
+          height: 800px;
+          justify-content: space-between;
+
+      }
+
+      #model_img_1 {
+          width: 58%;
+          height: 800px;
+          padding: 40px 0px;
+          position: absolute;
+          left: 40px;
+
+      }
+
+      #model_img_2 {
+          width: 35%;
+          height: 800px;
+          padding-top: 41px;
+          padding-bottom: 40px;
+          position: absolute;
+          right: 30px;
+
+      }
+
+      #shop_menswear {
+          height: 210px;
+          position: relative;
+
+
+      }
+
+      #dutch_design {
+          position: absolute;
+          top: 0%;
+          left: 30%;
+          width: 85%;
+      }
+
+      #shop_menswear_info p {
+          font-size: 16px;
+      }
+
+      /* --------------------section 4---------------- */
+      #section4 {
+          display: flex;
+          flex-wrap: wrap;
+          position: relative;
+          height: 800px;
+          width: 100%;
+      }
+
+      #model_img_3 {
+          position: absolute;
+          top: 10%;
+          left: 3%;
+          width: 42%;
+          height: 100%;
+      }
+
+      #model_img_4 {
+          display: inline-flex;
+          position: absolute;
+          top: 10%;
+          right: 2%;
+          width: 50%;
+          height: 100%;
+      }
+
+      /* --------------------------shop footwear ----------------------- */
+
+      #shop_footwear {
+          height: 300px;
+          position: relative;
+      }
+
+      #shop_sneakar {
+          position: absolute;
+          top: 30%;
+          left: 30%;
+          width: 85%;
+      }
+
+      #shop_footwear_info p {
+          font-size: 16px;
+      }
+
+      /* ---------------------product section ----------------- */
+
+      .product_section {
+          flex-direction: row;
+          justify-content: center;
+          align-items: stretch;
+          gap: 30px;
+          padding: 60px 100px;
+      }
+
+      .product_card img {
+          height: 100%;
+      }
+
+      .product_info h3 {
+          font-size: 1.4rem;
+      }
+
+      .product_info p {
+          font-size: 1rem;
+      }
+
+      #favorites {
+          margin: 5px;
+      }
+
+      .container {
+          position: absolute;
+          top: 30%;
+          left: 9%
+      }
+
+      /* -------------------------------------------footer---------------------------------- */
+
+      .last_footer .row {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+      }
+
+      .last_footer .col-xl-3,
+      .last_footer .col-xl-2 {
+          flex: 1;
+      }
+
+      .last_footer .social-icons {
+          display: flex;
+          justify-content: start;
+      }
+
+      .social-icons{
+        position: absolute;
+        top: 50%;
+        left: 30%;
+      }
+
+      .last_footer .selectors {
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+      }
+
+      .payment-icons img {
+          width: 45px;
+      }
+
+
+  }
