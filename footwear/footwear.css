@@ -207,10 +207,8 @@ nav li.active {
 
 
 
-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Makes video fill container */
+.video-container video {
+display: none;
 }
 
 .video-text {
