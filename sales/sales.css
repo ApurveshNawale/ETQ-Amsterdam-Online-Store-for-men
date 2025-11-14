@@ -56,6 +56,14 @@ body {
     display: none;
 }
 
+.nav_menu li:hover {
+    transform: scale(1.1);
+}
+
+nav li.active {
+    transform: scale(1.75);
+}
+
 .nav_right {
     display: flex;
     align-items: center;
@@ -79,6 +87,7 @@ body {
 }
 
 
+
 .cart_icon {
     width: 30px;
     height: 30px;
@@ -92,19 +101,148 @@ body {
 }
 
 
+
+/* ------------------------------------main------------------ */
+
+/* --------------------------footwear_product------------------- */
+.collection {
+    padding: 16px;
+    text-align: center;
+}
+
+.collection h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    align-items: start;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.product {
+    background: #f9f9f9;
+    /* border-radius: 8px; */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.03);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Filter Footer */
+.footer-filter {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 10px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+#product_footwear {
+    margin: 50px;
+}
+
+.product_card_1 {
+    width: 90%;
+    max-width: 300px;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+
+.offer_text {
+    color: #a52424;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.product_name {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 4px 0;
+}
+
+.product_material {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.price {
+    font-size: 1rem;
+}
+
+.old_price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 6px;
+}
+
+#offer_text1 {
+    font-size: 15px;
+    color: rgb(25, 201, 9);
+}
+
+.offer_text2{
+    font-size: 15px;
+    color: rgb(209, 15, 15);
+}
+
+
+
+#poster {
+    display: none;
+}
+
 /* ------------------------------footer------------------------------------------------ */
 
 /* ---------------------------return and exchange------------------- */
 
-.container-fluid {
+/* .container-fluid {
     height: 300px;
     position: relative;
-}
-
+} */
+/* 
 .container {
     position: absolute;
     top: 30%;
     left: 2%
+} */
+
+#slide_info {
+    height: 300px;
+    position: relative;
+}
+
+#slide_info1 {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
+
+#slide_info2 {
+    position: absolute;
+    top: 20%;
+    left: 2%;
 }
 
 .last_footer {
@@ -154,7 +292,7 @@ body {
     text-align: center;
 }
 
-.last_footer .col-12 {
+.last_footerr .col-12 {
     margin-bottom: 20px;
 }
 
@@ -174,14 +312,10 @@ body {
     width: 30px;
 }
 
-#about_etq:hover {
-    text-decoration: underline;
-}
-
-#country, #language {
+#country,
+#language {
     padding: 5px;
 }
-
 
 /* --------- MEDIA QUERY: LAPTOP VIEW --------- */
 @media only screen and (min-width:1200px) {
@@ -237,15 +371,50 @@ body {
         margin-left: 15px;
     }
 
+    /* ------------------------------footer------------------------------------------------ */
+
+    /* ---------------------------return and exchange------------------- */
+
+
+
+    .collection {
+        padding: 40px 80px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(7, 1fr);
+        gap: 40px;
+    }
+
+    .product h3 {
+        font-size: 20px;
+    }
+
+    .footer-filter {
+        padding: 20px 60px;
+        font-size: 16px;
+    }
+
 
     /* ----------------------------------footer--------------------------------- */
 
-    .container {
+    /* .container {
         position: absolute;
         top: 30%;
         left: 9%
+    } */
+
+    #slide_info1 {
+        position: absolute;
+        top: 30%;
+        left: 2%;
     }
 
+    #slide_info2 {
+        position: absolute;
+        top: 30%;
+        left: 2%;
+    }
 
     .last_footer .row {
         display: flex;
@@ -254,7 +423,7 @@ body {
     }
 
     .last_footer .col-xl-3,
-    .last_footerr .col-xl-2 {
+    .last_footer .col-xl-2 {
         flex: 1;
     }
 
@@ -262,6 +431,17 @@ body {
         display: flex;
         justify-content: start;
     }
+    
+    #follow_us{
+        position: relative;
+      
+    }
+
+    .social-icons {
+          position: absolute;
+          top: 50%;
+          left: 28%;
+      }
 
     .last_footer .selectors {
         display: flex;
@@ -271,6 +451,10 @@ body {
 
     .payment-icons img {
         width: 45px;
+    }
+
+    #poster {
+        display: inline;
     }
 
 }
