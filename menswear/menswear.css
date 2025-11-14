@@ -199,12 +199,15 @@ nav li.active {
 
 #offer_text1 {
     font-size: 15px;
-    color: rgb(202, 29, 13);
+    color: rgb(25, 201, 9);
 }
 
-.offer_text2 {
-    color: #000;
+.offer_text2{
+    font-size: 15px;
+    color: rgb(209, 15, 15);
 }
+
+
 
 #poster {
     display: none;
