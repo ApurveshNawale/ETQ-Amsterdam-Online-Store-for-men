@@ -56,12 +56,12 @@ body {
     display: none;
 }
 
-.nav_menu li:hover{
+.nav_menu li:hover {
     transform: scale(1.1);
 }
 
 nav li.active {
-  transform: scale(1.75);
+    transform: scale(1.75);
 }
 
 .nav_right {
@@ -113,7 +113,7 @@ nav li.active {
 .collection h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    align-items:start;
+    align-items: start;
 }
 
 .product-grid {
@@ -156,73 +156,58 @@ nav li.active {
 #product_footwear {
     margin: 50px;
 }
+
 .product_card_1 {
-      width: 90%;
-      max-width: 300px;
-      margin: 5px auto;
-      padding: 10px;
-      text-align: left;
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-  }
-
-
-  .offer_text {
-      color: #a52424;
-      font-size: 0.9rem;
-      margin-top: 5px;
-      font-weight: 600;
-  }
-
-  .product_name {
-      font-size: 15px;
-      font-weight: 600;
-      margin: 4px 0;
-  }
-
-  .product_material {
-      color: #666;
-      font-size: 0.9rem;
-      margin-bottom: 4px;
-  }
-
-  .price {
-      font-size: 1rem;
-  }
-
-  .old_price {
-      text-decoration: line-through;
-      color: #999;
-      margin-right: 6px;
-  }
-
-  #offer_text1 {
-      font-size: 15px;
-      color: rgb(202, 29, 13);
-  }
-
-  .offer_text2 {
-      color: #000;
-  }
-
-
-
-.video-container video {
-display: none;
+    width: 90%;
+    max-width: 300px;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
 }
 
-.video-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centers text */
-  color: white;
-  text-align: center;
-  font-size: 2rem;
-  font-family: Arial, sans-serif;
-  background: rgba(0, 0, 0, 0.4); /* Optional: dark background behind text */
-  padding: 20px;
-  border-radius: 10px;
+
+.offer_text {
+    color: #a52424;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.product_name {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 4px 0;
+}
+
+.product_material {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.price {
+    font-size: 1rem;
+}
+
+.old_price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 6px;
+}
+
+#offer_text1 {
+    font-size: 15px;
+    color: rgb(202, 29, 13);
+}
+
+.offer_text2 {
+    color: #000;
+}
+
+#poster {
+    display: none;
 }
 
 /* ------------------------------footer------------------------------------------------ */
@@ -239,6 +224,23 @@ display: none;
     top: 30%;
     left: 2%
 } */
+
+#slide_info {
+    height: 300px;
+    position: relative;
+}
+
+#slide_info1 {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
+
+#slide_info2 {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
 
 .last_footer {
     background-color: #fff;
@@ -399,6 +401,17 @@ display: none;
         left: 9%
     } */
 
+    #slide_info1 {
+        position: absolute;
+        top: 30%;
+        left: 2%;
+    }
+
+    #slide_info2 {
+        position: absolute;
+        top: 30%;
+        left: 2%;
+    }
 
     .last_footer .row {
         display: flex;
@@ -415,6 +428,17 @@ display: none;
         display: flex;
         justify-content: start;
     }
+    
+    #follow_us{
+        position: relative;
+      
+    }
+
+    .social-icons {
+          position: absolute;
+          top: 50%;
+          left: 28%;
+      }
 
     .last_footer .selectors {
         display: flex;
@@ -424,6 +448,10 @@ display: none;
 
     .payment-icons img {
         width: 45px;
+    }
+
+    #poster {
+        display: inline;
     }
 
 }
