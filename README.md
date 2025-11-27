@@ -10,7 +10,7 @@ I made this project only for **learning and practice**.
 - Bootstrap  
 ## 🔗 Deployment
 You can view the live site here:  
-👉 [Web-Site Link ]([https://apurveshnawale.github.io/Koio_online_Store_for_men/](https://apurveshnawale.github.io/ETQ-Amsterdam-Online-Store-for-men/)) 
+👉 [Web-Site Link ](https://apurveshnawale.github.io/ETQ-Amsterdam-Online-Store-for-men/)
 
 
 ## 📌 About This Project
